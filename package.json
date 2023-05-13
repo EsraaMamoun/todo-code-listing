@@ -1,6 +1,6 @@
 {
   "name": "todo-code-listing",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Listing all todo tag in one file",
   "main": "dist/index.cjs",
   "scripts": {
