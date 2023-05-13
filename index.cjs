@@ -2,11 +2,14 @@ const fs = require("fs");
 const glob = require("glob");
 const http = require("http");
 
-function scanProjectForTodos(projectPath, outputFile, fileExtension) {
+function scanProjectForTodos(projectPath, outputFile, fileExtensions) {
   const todoList = [];
 
   // Recursively find all files in the project
-  const files = glob.sync(`**/*.${fileExtension}`, {
+  const patterns = fileExtensions
+    .split(",")
+    .map((extension) => `**/*.${extension}`);
+  const files = glob.sync(patterns, {
     cwd: projectPath,
     ignore: "node_modules/**",
   });
