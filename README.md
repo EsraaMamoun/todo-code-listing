@@ -6,7 +6,10 @@ To use the todo-code-listing package, follow these steps:
 
 2. Navigate to the root directory of the project you want to scan for TODO comments.
 
-3. Run the todo-listing command followed by the required arguments:
+3. Run Command
+   `npm install -g todo-code-listing`
+
+4. Run the todo-listing command followed by the required arguments:
 
 `todo-listing <projectPath> <outputFile> <fileExtensions>`
 
