@@ -2,7 +2,7 @@
 const fs = require("fs");
 const glob = require("glob");
 
-function scanProjectForTodos(projectPath, outputFile, fileExtensions) {
+function scanProjectForTodo(projectPath, outputFile, fileExtensions) {
   const todoList = [];
 
   // Recursively find all files in the project
@@ -46,4 +46,4 @@ function scanProjectForTodos(projectPath, outputFile, fileExtensions) {
 
 const [, , projectPath, outputFile, fileExtension] = process.argv;
 
-scanProjectForTodos(projectPath, outputFile, fileExtension);
+scanProjectForTodo(projectPath, outputFile, fileExtension);
