@@ -1,3 +1,6 @@
+# About
+The package to list all TODO commented tags in your project
+
 # Usage
 
 To use the todo-code-listing package, follow these steps:
