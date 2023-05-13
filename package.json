@@ -1,0 +1,30 @@
+{
+  "name": "todo-code-listing",
+  "version": "1.0.0",
+  "description": "Listing all todo tag in one file",
+  "main": "index.cjs",
+  "scripts": {
+    "start": "node --experimental-modules index.cjs"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EsraaMamoun/todo-code-listing.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "EsraaMamoun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EsraaMamoun/todo-code-listing/issues"
+  },
+  "homepage": "https://github.com/EsraaMamoun/todo-code-listing#readme",
+  "dependencies": {
+    "glob": "^10.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.3",
+    "typescript": "^5.0.4"
+  }
+}
