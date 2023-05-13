@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 const fs = require("fs");
 const glob = require("glob");
-const http = require("http");
 
 function scanProjectForTodos(projectPath, outputFile, fileExtensions) {
   const todoList = [];
@@ -42,19 +41,9 @@ function scanProjectForTodos(projectPath, outputFile, fileExtensions) {
   });
 
   fs.writeFileSync(outputFile, output);
+  console.log(`File written to ${outputFile}`);
 }
 
 const [, , projectPath, outputFile, fileExtension] = process.argv;
 
 scanProjectForTodos(projectPath, outputFile, fileExtension);
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/plain");
-  res.end("Hello, world!");
-});
-
-const port = 3000;
-server.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
