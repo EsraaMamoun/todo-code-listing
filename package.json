@@ -1,14 +1,17 @@
 {
   "name": "todo-code-listing",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Listing all todo tag in one file",
-  "main": "index.cjs",
+  "main": "dist/index.cjs",
   "scripts": {
-    "start": "node --experimental-modules index.cjs"
+    "start": "node --experimental-modules dist/index.cjs"
   },
   "bin": {
-    "todo-listing": "index.cjs"
+    "todo-listing": "dist/index.cjs"
   },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "repository": {
     "type": "git",
