@@ -1,13 +1,15 @@
-# todo-code-listing:
+# Usage
 
-## Command:
+To use the todo-code-listing package, follow these steps:
 
-`node index.cjs projectPath outputFile fileExtensions`
+1. Open your terminal or command prompt.
 
-### Example:
+2. Navigate to the root directory of the project you want to scan for TODO comments.
 
-`node index.cjs path/to/project/folder path/to/project/folder/file ts`
+3. Run the todo-listing command followed by the required arguments:
 
-### Multiple files extensions:
+`todo-listing <projectPath> <outputFile> <fileExtensions>`
 
-`node index.cjs path/to/project/folder path/to/project/folder/file ts,prisma,js`
+## Example:
+
+`todo-listing /path/to/project /path/to/todo.txt js,ts`
