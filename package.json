@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node --experimental-modules index.cjs"
   },
+  "bin": {
+    "todo-listing": "index.cjs"
+  },
   "type": "module",
   "repository": {
     "type": "git",
